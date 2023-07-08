@@ -66,3 +66,9 @@ fig, axes = plt.subplots(3, 1, figsize=(16, 27), sharex=True)
 for region, ax in zip(["cn", "tw", "kr"], axes):
     plot(region, ax)
     plt.savefig("bikini.png")
+
+from git import Git
+
+git = Git("./")
+git.add(".")
+git.commit(m=f"{datetime.now()}")
