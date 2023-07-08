@@ -72,3 +72,4 @@ from git import Git
 git = Git("./")
 git.add(".")
 git.commit(m=f"{datetime.now()}")
+git.push()
